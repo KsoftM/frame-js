@@ -1,0 +1,36 @@
+{
+  "name": "frame-js",
+  "version": "1.0.0",
+  "description": "Pre packed framework for the api and web development.",
+  "main": "server.mjs",
+  "scripts": {
+    "start": "NODE_ENV=development node server.mjs --exprementel-model --ALLOW_CONFIG_MUTATIONS",
+    "dev": "nodemon server.mjs --exprementel-model --ALLOW_CONFIG_MUTATIONS",
+    "migrate": "knex migrate:latest --knexfile knexfile.mjs --knexpath database/knex.mjs",
+    "migrate:latest": "knex migrate:latest --knexfile knexfile.mjs --knexpath database/knex.mjs"
+  },
+  "repository": "ksoftm/frame-js",
+  "keywords": [
+    "framework",
+    "express",
+    "mvc"
+  ],
+  "author": "Ksoftm",
+  "license": "MIT",
+  "ignore": [
+    "**/test/**"
+  ],
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "config": "^3.3.8",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-handlebars": "^6.0.6",
+    "knex": "^2.3.0",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.25.2"
+  }
+}
