@@ -15,7 +15,7 @@
     "express",
     "mvc"
   ],
-  "author": "Ksoftm",
+  "author": "KsoftM <ksoftmanagement@gmail.com>",
   "license": "MIT",
   "ignore": [
     "**/test/**"
